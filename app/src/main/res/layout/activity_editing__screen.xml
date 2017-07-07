@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.imanshu.project_editor.activity.Editing_Screen">
+
+<include
+    layout="@layout/toolbar"/>
+
+
+<LinearLayout
+    android:layout_alignParentBottom="true"
+    android:id="@+id/linear"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+    <com.example.imanshu.project_editor.view.NonSwipeableViewPager
+        android:id="@+id/viewpager_edit"
+        android:layout_width="match_parent"
+        android:layout_height="150dp">
+
+    </com.example.imanshu.project_editor.view.NonSwipeableViewPager>
+
+    <include
+        layout="@layout/bottom_nav_editor"/>
+    </LinearLayout>
+
+
+
+
+    <!--<android.support.design.widget.TabLayout-->
+        <!--android:paddingTop="5dp"-->
+        <!--android:layout_gravity="center_vertical"-->
+        <!--app:tabIndicatorColor="@null"-->
+        <!--app:tabSelectedTextColor="@color/black"-->
+        <!--app:tabMode="fixed"-->
+        <!--style="@style/MyTabLayout"-->
+        <!--android:id="@+id/tab_editor"-->
+        <!--app:tabTextColor="@color/white"-->
+        <!--android:background="@color/black"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="35dp"-->
+        <!--/>-->
+<!--</LinearLayout>-->
+    
+</RelativeLayout>

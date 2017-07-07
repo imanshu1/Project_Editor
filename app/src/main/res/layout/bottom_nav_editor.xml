@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="0dp"
+    android:layout_weight="0.1"
+    android:background="@color/black"
+    android:orientation="horizontal"
+    android:padding="2dp">
+
+
+    <TextView
+        android:id="@+id/tvText"
+        style="@style/tvBottomNavEditor"
+        android:drawableTop="@drawable/ic_title_black_24dp"
+        android:text="Text"/>
+
+    <TextView
+        android:id="@+id/tvElements"
+        style="@style/tvBottomNavEditor"
+        android:drawableTop="@drawable/ic_elements_black_24dp"
+        android:text="Elements"/>
+
+    <TextView
+        android:id="@+id/tvLayouts"
+        style="@style/tvBottomNavEditor"
+        android:drawableTop="@drawable/ic_layouts_black_24dp"
+        android:text="Layouts"/>
+
+    <TextView
+        android:id="@+id/tvPages"
+        style="@style/tvBottomNavEditor"
+        android:drawableTop="@drawable/ic_upload"
+        android:text="Upload"/>
+
+
+</LinearLayout>

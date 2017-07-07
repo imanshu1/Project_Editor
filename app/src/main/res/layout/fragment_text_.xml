@@ -1,0 +1,203 @@
+<LinearLayout android:weightSum="10"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="150dp"
+    android:background="@color/black_z"
+    android:orientation="vertical"
+    tools:context="com.example.imanshu.project_editor.fragment.Text_Fragment"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <!-- TODO: Update blank fragment layout -->
+    <!--<TextView-->
+        <!--android:textColor="@color/white"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:text="@string/hello_blank_fragment" />-->
+
+    <LinearLayout
+        android:layout_weight="2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="10dp"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:weightSum="3">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:weightSum="10"
+            android:layout_marginBottom="5dp">
+
+            <TextView
+                android:id="@+id/style_box"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:layout_weight="7"
+                android:text="Font Style"
+                android:textColor="@color/white"
+                android:textSize="20dp" />
+
+            <View
+                android:layout_marginRight="10dp"
+                android:layout_centerVertical="true"
+                android:layout_alignParentEnd="true"
+                android:layout_weight="2"
+                android:background="@color/sky"
+                android:layout_width="28dp"
+                android:layout_height="28dp"
+                android:layout_gravity="right"
+                android:layout_alignParentRight="true" />
+
+        </RelativeLayout>
+
+
+        <LinearLayout
+            android:padding="5dp"
+            android:weightSum="10"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1.5"
+                android:background="@drawable/background_textfragment"
+                android:gravity="center_horizontal">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="7dp"
+                    android:src="@drawable/ic_format_align_center_black_24dp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_weight="1.25"
+                android:layout_width="0dp"
+                android:layout_height="match_parent">
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:weightSum="12"
+                android:gravity="center_horizontal"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/background_textfragment"
+                android:layout_weight="4"
+                android:layout_width="0dp"
+                android:orientation="horizontal"
+                android:layout_height="match_parent" >
+
+                <ImageView
+                    android:padding="5dp"
+                    android:src="@drawable/ic_format_bold_black_24dp"
+                    android:layout_weight="4"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent" />
+
+                <!--<View-->
+                    <!--android:layout_gravity="center_vertical"-->
+                    <!--android:background="@color/white"-->
+                    <!--android:layout_width="0.3dp"-->
+                    <!--android:layout_height="25dp"-->
+                    <!--/>-->
+
+                <ImageView
+                    android:padding="5dp"
+                    android:src="@drawable/ic_format_italic_black_24dp"
+                    android:layout_weight="4"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent" />
+
+                <!--<View-->
+                    <!--android:layout_gravity="center_vertical"-->
+                    <!--android:background="@color/white"-->
+                    <!--android:layout_width="0.3dp"-->
+                    <!--android:layout_height="25dp"-->
+                    <!--/>-->
+
+                <ImageView
+                    android:padding="5dp"
+                    android:src="@drawable/ic_text_format_black_24dp"
+                    android:layout_weight="4"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_weight="1.25"
+                android:layout_width="0dp"
+                android:layout_height="match_parent">
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:background="@drawable/background_textfragment"
+                android:layout_weight="2"
+                android:layout_width="0dp"
+                android:layout_height="match_parent" >
+
+                <TextView
+                    android:textSize="10dp"
+                    android:id="@+id/textView"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:text="Spacing"
+                    android:textAlignment="center"
+                    android:textColor="@color/white" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:gravity="center_vertical"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:weightSum="10">
+
+            <TextView
+                android:textSize="10dp"
+                android:textAlignment="center"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Size"
+                android:textColor="@color/white" />
+
+            <SeekBar
+                android:theme="@style/Seek"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="8" />
+
+            <TextView
+                android:textSize="10dp"
+                android:textAlignment="center"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="27"
+                android:textColor="@color/white" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

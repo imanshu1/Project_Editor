@@ -1,0 +1,145 @@
+<LinearLayout
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.imanshu.project_editor.fragment.Fragment_Profile">
+
+    <LinearLayout
+        android:id="@+id/layout_profile"
+        android:weightSum="1"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:gravity="center"
+            android:layout_weight="0.25"
+            android:layout_width="match_parent"
+            android:layout_height="0dp">
+
+            <com.example.imanshu.project_editor.view.RoundedImageView
+                android:id="@+id/home_roundedimage"
+                android:padding="10dp"
+                android:src="@drawable/fb_3"
+                android:layout_width="73dp"
+                android:layout_height="73dp" />
+
+        </LinearLayout>
+
+        <TextView
+            android:textColor="@color/black_z"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:gravity="center_vertical"
+            android:textAlignment="center"
+            android:text="Imanshu"
+            android:layout_weight="0.05"
+            android:layout_width="match_parent"
+            android:layout_height="0dp" />
+
+        <TextView
+            android:textColor="@color/colorPrimary"
+            android:textStyle="normal"
+            android:gravity="center_vertical"
+            android:textAlignment="center"
+            android:text="Android Developer"
+            android:layout_weight="0.05"
+            android:layout_width="match_parent"
+            android:layout_height="0dp" />
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:weightSum="2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:textColor="@color/purple"
+                    android:textSize="40dp"
+                    android:text="0"
+                    android:textAlignment="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:textColor="@color/black_z"
+                    android:textSize="20dp"
+                    android:textAlignment="center"
+                    android:text="Designs"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:textColor="@color/purple"
+                    android:textSize="40dp"
+                    android:text="5"
+                    android:textAlignment="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:textColor="@color/black_z"
+                    android:textSize="20dp"
+                    android:textAlignment="center"
+                    android:text="Shares"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:padding="20dp"
+            android:layout_weight="0.6"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="0dp">
+
+            <Button
+                android:layout_margin="5dp"
+                android:background="@drawable/border_black"
+                android:text="Rate our App"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <Button
+                android:layout_margin="5dp"
+                android:background="@drawable/border_black"
+                android:text="Share our App"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <Button
+                android:layout_margin="5dp"
+                android:background="@drawable/border_black"
+                android:text="Feedback"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+</LinearLayout>

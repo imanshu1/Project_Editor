@@ -1,17 +1,23 @@
 package com.example.imanshu.project_editor.fragment;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 
 import com.example.imanshu.project_editor.R;
+import com.example.imanshu.project_editor.activity.Home;
+import com.example.imanshu.project_editor.activity.Login;
 import com.example.imanshu.project_editor.view.RoundedImageView;
+import com.google.firebase.auth.FirebaseAuth;
 
 public class Fragment_Profile extends Fragment {
 
-RoundedImageView home_roundedimage;
+    RoundedImageView home_roundedimage;
+    Button profile_btn_logout;
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
@@ -19,15 +25,23 @@ RoundedImageView home_roundedimage;
 
         View myInflatedView = inflater.inflate(R.layout.fragment_fragment__profile, container,false);
 
-       // return inflater.inflate(R.layout.fragment_fragment__profile, container, false);
+        profile_btn_logout=(Button)myInflatedView.findViewById(R.id.profile_btn_logout);
 
+       // return inflater.inflate(R.layout.fragment_fragment__profile, container, false);
         home_roundedimage=(RoundedImageView)myInflatedView.findViewById(R.id.home_roundedimage);
         home_roundedimage.setImageResource(R.drawable.im);
 
+        profile_btn_logout.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Home act=(Home)getActivity();
+                FirebaseAuth.getInstance().signOut();
+                Intent signout=new Intent(act,Login.class);
+                signout.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+                signout.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK);
+                startActivity(signout);
+            }
+        });
         return myInflatedView;
-
     }
-
-
-
 }

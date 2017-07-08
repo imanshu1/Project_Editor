@@ -24,12 +24,15 @@ public class Login extends AppCompatActivity {
     Button signup;
 
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
 
         ButterKnife.bind(this);
+
+
 
 
         TextView textView = (TextView) findViewById(R.id.main_heading);

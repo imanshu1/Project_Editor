@@ -12,16 +12,18 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme.NoActionBar">
         <activity android:name=".activity.Login">
+
+        </activity>
+        <activity android:name=".activity.Editing_Screen" />
+        <activity android:name=".activity.Login_Form" />
+        <activity android:name=".activity.Signup_form" />
+        <activity android:name=".activity.Home">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".activity.Editing_Screen" />
-        <activity android:name=".activity.Login_Form" />
-        <activity android:name=".activity.Signup_form" />
-        <activity android:name=".activity.Home"></activity>
     </application>
 
 </manifest>

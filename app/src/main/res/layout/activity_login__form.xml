@@ -24,6 +24,27 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content" />
 
+
+
+        <ProgressBar
+            android:layout_gravity="center_horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/progress_bar"
+            android:visibility="gone"/>
+
+        <TextView
+            android:visibility="gone"
+            android:id="@+id/loginform_error"
+            android:layout_marginTop="5dp"
+            android:textAlignment="center"
+            android:paddingRight="40dp"
+            android:paddingLeft="40dp"
+            android:textColor="@color/hint"
+            android:text="Start making awesome designs and access millions of images bu signing up for Account"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
         <Button
             android:layout_marginTop="15dp"
             android:textAllCaps="false"
@@ -54,6 +75,7 @@
             android:layout_height="wrap_content" />
 
         <EditText
+            android:id="@+id/loginform_email"
             android:singleLine="true"
             android:textColorHint="@color/hint"
             android:hint="Your email address"
@@ -62,7 +84,7 @@
             android:layout_height="wrap_content" />
         <EditText
             android:textColorHint="@color/hint"
-            android:id="@+id/login_password"
+            android:id="@+id/loginform_password"
             android:inputType="textPassword"
             android:layout_marginTop="11dp"
             android:hint="Your password"
@@ -102,5 +124,7 @@
         android:text=" New user? Sign up"
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
+
+
 
 </RelativeLayout>

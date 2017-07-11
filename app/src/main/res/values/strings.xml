@@ -5,4 +5,31 @@
     <string name="hello_blank_fragment">Hello blank fragment</string>
 
     <!-- TODO: Remove or change this placeholder text -->
+
+    <string name="facebook_app_id">1873956579517876</string>
+    <string name="fb_login_protocol_scheme">fb488397781552296</string>
+
+    /////////////login//////////////////////
+    <string name="heading">Making Design Awesome</string>
+
+    /////////////////////////Login form and Signup form///////////////////////////////////////
+    <string name="login_welcome">Start making awesome designs and access millions of images bu signing up for Account</string>
+    <string name="fb_button">Connect with facebook</string>
+    <string name="gmail_button">Connect with gmail</string>
+    <string name="login_email">Your email address</string>
+    <string name="login_password">Your password</string>
+    <string name="signup_password">Choose a password</string>
+    <string name="forgotpassword">I have forgotten my password!</string>
+    <string name="signup_link"> New user? Sign up</string>
+    <string name="login_link"> Existing user? Log in</string>
+
+
+    //////////////////////home/////////////////////////////
+    <string name="home_heading">Editor</string>
+
+
+    ///////////////////////editing screen////////////////////
+
+
+
 </resources>

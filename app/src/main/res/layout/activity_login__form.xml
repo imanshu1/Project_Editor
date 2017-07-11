@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout
-    android:paddingLeft="40dp"
-    android:paddingRight="40dp"
+    xmlns:facebook="http://schemas.android.com/apk/res-auto"
+    android:paddingLeft="@dimen/layout_padding_left"
+    android:paddingRight="@dimen/layout_padding_right"
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
@@ -13,12 +14,14 @@
         android:layout_centerVertical="true"
         android:orientation="vertical"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:weightSum="1">
 
         <TextView
+            android:layout_marginBottom="@dimen/margin_medium"
             android:id="@+id/login_heading"
             android:textAlignment="center"
-            android:textSize="45dp"
+            android:textSize="@dimen/heading_textsize"
             android:textColor="@color/black_z"
             android:text="Log In"
             android:layout_width="match_parent"
@@ -35,40 +38,78 @@
 
         <TextView
             android:visibility="gone"
+            android:layout_marginBottom="@dimen/margin_slight_medium"
             android:id="@+id/loginform_error"
-            android:layout_marginTop="5dp"
             android:textAlignment="center"
-            android:paddingRight="40dp"
-            android:paddingLeft="40dp"
+            android:paddingRight="@dimen/layout_padding_right"
+            android:paddingLeft="@dimen/layout_padding_left"
             android:textColor="@color/hint"
-            android:text="Start making awesome designs and access millions of images bu signing up for Account"
+            android:text="@string/login_welcome"
             android:layout_width="match_parent"
             android:layout_height="wrap_content" />
 
-        <Button
+        <FrameLayout
+            android:layout_marginTop="@dimen/margin_small"
+            android:id="@+id/FrameLayout1"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/button_hieght" >
+
+        <com.facebook.login.widget.LoginButton
+            android:visibility="gone"
+            xmlns:fb="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/fb_login_button"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="3dp"
+            android:layout_marginRight="3dp"
             android:layout_marginTop="15dp"
-            android:textAllCaps="false"
+            />
+
+            <Button
+                android:textColor="@color/white"
+                android:textAllCaps="false"
+                android:id="@+id/fb"
+                android:text="@string/fb_button"
+                android:background="@color/colorPrimary"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_marginTop="@dimen/margin_small"
+            android:id="@+id/FrameLayout2"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/button_hieght" >
+
+
+        <com.google.android.gms.common.SignInButton
+            android:visibility="gone"
+            android:layout_gravity="center_horizontal"
+            android:id="@+id/loginform_google_login"
             android:textColor="@color/white"
-            android:text="Connect with facebook"
-            android:background="@color/colorPrimary"
             android:layout_width="match_parent"
             android:layout_height="wrap_content" />
-        <Button
-            android:layout_marginTop="11dp"
-            android:textAllCaps="false"
-            android:textColor="@color/white"
-            android:text="Connect with Google"
-            android:background="@color/red"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
+
+            <Button
+                android:textColor="@color/white"
+                android:textAllCaps="false"
+                android:id="@+id/gmail"
+                android:text="@string/gmail_button"
+                android:background="@color/red"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+        </FrameLayout>
 
         <TextView
             android:id="@+id/login_or"
             android:typeface="monospace"
-            android:layout_margin="11dp"
+            android:layout_margin="@dimen/margin_small"
             android:textStyle="italic"
             android:textAlignment="center"
-            android:textSize="20dp"
+            android:textSize="@dimen/or_textsize"
             android:textColor="@color/hint"
             android:text="- or -"
             android:layout_width="match_parent"
@@ -78,7 +119,7 @@
             android:id="@+id/loginform_email"
             android:singleLine="true"
             android:textColorHint="@color/hint"
-            android:hint="Your email address"
+            android:hint="@string/login_email"
             android:background="@drawable/border_black"
             android:layout_width="match_parent"
             android:layout_height="wrap_content" />
@@ -86,8 +127,8 @@
             android:textColorHint="@color/hint"
             android:id="@+id/loginform_password"
             android:inputType="textPassword"
-            android:layout_marginTop="11dp"
-            android:hint="Your password"
+            android:layout_marginTop="@dimen/margin_small"
+            android:hint="@string/login_password"
             android:background="@drawable/border_black"
             android:layout_width="match_parent"
             android:layout_height="wrap_content" />
@@ -99,17 +140,17 @@
             android:textAllCaps="false"
             android:textColor="@color/white"
             android:text="Log In"
-            android:padding="10dp"
+            android:padding="@dimen/button_padding"
             android:layout_gravity="center_horizontal"
-            android:layout_marginTop="11dp"
+            android:layout_marginTop="@dimen/margin_small"
             android:background="@drawable/mybutton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" />
         <TextView
             android:textAlignment="center"
             android:textColor="@color/sky"
-            android:text="I've forgotten my password!"
-            android:layout_margin="25dp"
+            android:text="@string/forgotpassword"
+            android:layout_margin="@dimen/margin_medium"
             android:layout_width="match_parent"
             android:layout_height="wrap_content" />
 
@@ -117,11 +158,11 @@
 
     <TextView
         android:id="@+id/login_text_newuser"
-        android:layout_marginBottom="25dp"
+        android:layout_marginBottom="@dimen/margin_medium"
         android:textColor="@color/black_z"
         android:textAlignment="center"
         android:layout_alignParentBottom="true"
-        android:text=" New user? Sign up"
+        android:text="@string/signup_link"
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
 

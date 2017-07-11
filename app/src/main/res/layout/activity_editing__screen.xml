@@ -22,7 +22,7 @@
     <com.example.imanshu.project_editor.view.NonSwipeableViewPager
         android:id="@+id/viewpager_edit"
         android:layout_width="match_parent"
-        android:layout_height="150dp">
+        android:layout_height="@dimen/editing_screen_viewpager_hiegt">
 
     </com.example.imanshu.project_editor.view.NonSwipeableViewPager>
 

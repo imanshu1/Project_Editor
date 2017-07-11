@@ -17,17 +17,17 @@
 
         <TextView
             android:id="@+id/home_heading"
-            android:layout_marginTop="20dp"
+            android:layout_marginTop="@dimen/margin_medium"
             android:typeface="sans"
-            android:textSize="25dp"
+            android:textSize="@dimen/home_heading_textsize"
             android:textAlignment="center"
             android:textColor="@color/white"
-            android:text="Editor"
+            android:text="@string/home_heading"
             android:layout_width="match_parent"
             android:layout_height="wrap_content" />
 
         <LinearLayout
-            android:layout_marginTop="15dp"
+            android:layout_marginTop="@dimen/margin_slight_medium"
             android:weightSum="4"
             android:gravity="center_horizontal"
             android:orientation="horizontal"
@@ -40,11 +40,11 @@
 
             <ImageView
                 android:id="@+id/iv_home"
-                android:padding="8dp"
+                android:padding="@dimen/home_image_padding"
                 android:background="@drawable/circle_selector"
                 android:src="@drawable/ic_home_black_24dp"
-                android:layout_width="35dp"
-                android:layout_height="35dp" />
+                android:layout_width="@dimen/home_icon_width"
+                android:layout_height="@dimen/home_icon_hieght" />
 
             <!--<TextView-->
                 <!--android:layout_marginTop="5dp"-->
@@ -62,11 +62,11 @@
 
                 <ImageView
                     android:id="@+id/iv_design"
-                    android:padding="8dp"
+                    android:padding="@dimen/home_image_padding"
                     android:background="@drawable/circle_selector"
                     android:src="@drawable/ic_edit_black_24dp"
-                    android:layout_width="35dp"
-                    android:layout_height="35dp" />
+                    android:layout_width="@dimen/home_icon_width"
+                    android:layout_height="@dimen/home_icon_hieght" />
 
                 <!--<TextView-->
                     <!--android:layout_marginTop="5dp"-->
@@ -84,11 +84,11 @@
 
                 <ImageView
                     android:id="@+id/iv_notification"
-                    android:padding="8dp"
+                    android:padding="@dimen/home_image_padding"
                     android:background="@drawable/circle_selector"
                     android:src="@drawable/ic_favorite_black_24dp"
-                    android:layout_width="35dp"
-                    android:layout_height="35dp" />
+                    android:layout_width="@dimen/home_icon_width"
+                    android:layout_height="@dimen/home_icon_hieght" />
 
                 <!--<TextView-->
                     <!--android:layout_marginTop="5dp"-->
@@ -106,11 +106,11 @@
 
                 <ImageView
                     android:id="@+id/iv_profile"
-                    android:padding="8dp"
+                    android:padding="@dimen/home_image_padding"
                     android:background="@drawable/circle_selector"
                     android:src="@drawable/ic_person_black_24dp"
-                    android:layout_width="35dp"
-                    android:layout_height="35dp" />
+                    android:layout_width="@dimen/home_icon_width"
+                    android:layout_height="@dimen/home_icon_hieght" />
 
                 <!--<TextView-->
                     <!--android:layout_marginTop="5dp"-->
